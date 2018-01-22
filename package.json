@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "protractor",
     "postinstall": "ng build --aot -prod",
-    "start": "node app.js"
+    "start": "node ./bin/www"
   },
   "private": true,
   "dependencies": {
