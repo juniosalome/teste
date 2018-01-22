@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "protractor",
-    "postinstall": "ng build --aot -prod",
-    "start": "node app.js"
+    "postinstall": "ng build --prod",
+    "start": "node node.js"
   },
   "private": true,
   "dependencies": {
