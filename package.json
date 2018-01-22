@@ -4,17 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "start": "node ./bin/www",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "protractor",
-<<<<<<< HEAD
-    "postinstall": "ng build --aot -prod",
-    "start": "node ./bin/www"
-=======
-    "postinstall": "ng build --prod",
-    "start": "node node.js"
->>>>>>> 44195be60a703183c55ed16de5f0c73716707e90
+    "e2e": "protractor"
   },
   "private": true,
   "dependencies": {
