@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Detalhes do usuário</h1>
+  <dl class="list">
+    <dt>ID</dt>
+    <dd>{{ usuario.id }}</dd>
+    <dt>Nome</dt>
+    <dd>{{ usuario.nome }}</dd>
+    <dt>Email</dt>
+    <dd>{{ usuario.email }}</dd>
+    <dt>Login</dt>
+    <dd>{{ usuario.login }}</dd>
+    <dt>Ultima Atualização</dt>
+    <dd>{{ usuario.updated_at }}</dd>
+  </dl>
+
+<div class="row">
+  <div class="col-md-12">
+    <a  class="btn btn-success" [routerLink]="['/usuario-editar', usuario._id]">Editar</a>
+    <a  class="btn btn-danger" type="button" (click)="deletarUsuario(usuario._id)">Deletar</a>
+    <a  class="btn btn-primary" type="button" routerLink="/">Voltar</a>
+  </div>
+</div>
+
+</div>
+
+

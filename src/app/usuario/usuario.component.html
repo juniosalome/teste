@@ -1,0 +1,29 @@
+<div class="container">
+
+    <h1>Lista de Usuários
+      
+    </h1>
+    <a [routerLink]="['/usuario-criar']"  class="btn btn-success">Novo</a>
+  <table class="table"> 
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Login</th>
+        <th>Nome</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id}}</td>
+        <td>{{ usuario.login }}</td>
+        <td>{{ usuario.nome }}</td>
+        <td><button class="btn btn-primary" [routerLink]="['/usuario-detalhe', usuario._id]">Detalhe</button></td>
+      </tr>
+    </tbody>
+
+  </table>
+
+</div>
+
