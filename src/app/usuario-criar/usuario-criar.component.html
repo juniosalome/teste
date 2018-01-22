@@ -4,28 +4,28 @@
     <div class="col-md-6">
       <form (ngSubmit)="salvarUsuario()" #usuarioForm="ngForm">
 
-        <div class="form-group">
-          <label for="name">ID</label>
+       <div class="form-group">
+          <label for="id">ID</label>
           <input type="text" class="form-control" [(ngModel)]="usuario.id" name="id" required>
         </div>
 
         <div class="form-group">
-          <label for="name">Nome</label>
+          <label for="nome">Nome</label>
           <input type="text" class="form-control" [(ngModel)]="usuario.nome" name="nome" required>
         </div>
 
         <div class="form-group">
-          <label for="name">Email</label>
-          <input type="text" class="form-control" [(ngModel)]="usuario.email" name="author" required>
+          <label for="email">Email</label>
+          <input type="email" class="form-control" [(ngModel)]="usuario.email" name="email" required>
         </div>
 
         <div class="form-group">
-          <label for="name">Login</label>
+          <label for="login">Login</label>
           <input type="text" class="form-control" [(ngModel)]="usuario.login" name="login" required>
         </div>
 
-        <div class="form-group">
-          <label for="name">Senha</label>
+    <div class="form-group">
+          <label for="senha">Senha</label>
           <input type="password" class="form-control" [(ngModel)]="usuario.senha" name="senha" required>
         </div>
 
