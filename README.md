@@ -2,11 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
+## Prerequisite 
+
+- Node.js
+- Express.js 
+- Angular 2 CLI
+
+npm install @angular/cli -g
+
+npm install --save express body-parser morgan body-parser serve-favicon
+
+npm install mongoose --save
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
-## run server
+## Run server
 
 Run `npm start`. Navigate to `http://localhost:3000/`.
 
